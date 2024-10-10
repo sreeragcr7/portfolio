@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="container">
+            <nav>
+                <img src="image/logo2.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="header">
+        <div class="container">
+            
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, i'm <span>Sreerag</span> <br> from India.</h1>
+                <h1><i class="fa-solid fa-code"></i> <i class="fa-solid fa-code-merge"></i> <i class="fa-regular fa-message"></i> <i class="fa-solid fa-server"></i>  <i class="fa-solid fa-database"></i></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/me2.jpg" alt="" height="600px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"Enthusiastic BCA graduate with strong programming skills in MERN Stack. Seeking to leverage my experience in web development and problem-solving to contribute to an innovative tech team."</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Pgm Language:</span><br>JavaScript</li>
+                            <li><span>Web Technologies:</span><br>HTML, CSS, Node.js, Express, React</li>
+                            <li><span>Database:</span><br>MongoDb</li>
+                            <li><span>Tools:</span><br>Git</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>I'm a fresher:</span><br>Have done multiple projects <br>- Designed and developed RESTful APIs using Node.js. <br>- Designed a responsive UI using HTML and CSS.<br>- Developed a web application using Node.js, Express, MongoDB, and EJS to allow users to search for and explore recipes.  
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Degree:</span><br>BCA(2020-2023)</li>
+                            <li><span>College:</span><br>Morazha Co-operative Arts and Science College, Kannur University, Kerala.</li>
+                            <li><span>Training institute:</span><br>Brocamp, Bangalore / Online (2023)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code" style="font-size: 45px;"></i>
+                    <h1>Web Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolorum quasi voluptatum, expedita reiciendis explicabo eligendi architecto delectus laudantium sint!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-square-js" style="font-size: 45px;"></i>
+                    <h1>Frontend</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolorum quasi voluptatum, expedita reiciendis explicabo eligendi architecto delectus laudantium sint!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-node-js" style="font-size: 45px;"></i>                    <h1>Backend</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolorum quasi voluptatum, expedita reiciendis explicabo eligendi architecto delectus laudantium sint!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                     <img src="image/w1.jpg" alt="">
+                     <div class="layer">
+                        <h3>Cooking Blog</h3>
+                        <p>A web application using Node.js, Express, MongoDB, and EJS to allow users to search for and explore recipes.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                     <img src="image/w4.jpg" alt="">
+                     <div class="layer">
+                        <h3>server side app</h3>
+                        <p>Designed and developed RESTful APIs using Node.js.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>  
+                </div>
+                     <div class="work">
+                         <img src="image/w3.jpg" alt="">
+                         <div class="layer">
+                         <h3>Website design</h3>
+                        <p>Designed a responsive UI using HTML and CSS.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                         </div>
+                     </div>
+            </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6282363583</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/___.rare._/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sreerag-m-k-70a095293/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"></a>
+                    </div>
+                    <a href="image/net.txt" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" id="" placeholder="Enter Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+             </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ©️ Sreerag <span>♥️</span></p>
+        </div>
+
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8einA6kKXT75aIffbKlcBKbprkb4J6BE2xTVFnYztKf-zw0Jsu-xIRe2lmdigTM3xiw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(() => {
+                    msg.innerHTML = ''
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://kit.fontawesome.com/510a768078.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
