@@ -24,3 +24,22 @@ function openMenu(){
 function closeMenu(){
     sidemenu.style.right = "-191px";
 }
+
+// validation
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const span = document.getElementById('msg');
+const btn = document.getElementById('btn');
+
+
+btn.addEventListener('click', () => {
+    if(name.value === ''){
+        name.placeholder = 'Name is required.'
+        name.classList.add('error')
+    }else if(email.value === ''){
+        email.placeholder = 'Email is required.'
+        email.classList.add('error')
+    }
+})

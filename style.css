@@ -497,3 +497,12 @@ nav .fas{
         font-size: 14px;
     }
 }
+
+input::placeholder {
+    color: grey; /* Default placeholder color */
+}
+
+/* Style the placeholder text when in an error state */
+input.error::placeholder {
+    color: #ff004f; /* Error placeholder color */
+}
